@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Framework-less Components</title>
+</head>
+<body>
+<template id="html-app">
+  <div class="container">
+    <h1>Authors</h1>
+    <author-form></author-form>
+    <author-grid></author-grid>
+    <footer class="fixed-bottom small">
+      <p class="text-center mb-0">
+        Hit Enter to add an author entry
+      </p>
+      <p class="text-center small">
+        Created with ❤ By C R
+      </p>
+    </footer>
+  </div>
+</template>
+<template id="author-form">
+  <form>
+    <div class="row mt-4">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Name" aria-label="Name">
+      </div>
+      <div class="col">
+        <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+      </div>
+      <div class="col">
+        <select class="form-select" aria-label="Topic">
+          <option>Topic</option>
+          <option>JavaScript</option>
+          <option>HTMLElement</option>
+          <option>ES7+</option>
+        </select>
+      </div>
+      <div class="col">
+        <select class="form-select search" aria-label="Search">
+          <option>Search by</option>
+          <option>All</option>
+          <option>JavaScript</option>
+          <option>HTMLElement</option>
+          <option>ES7+</option>
+        </select>
+      </div>
+    </div>
+  </form>
+</template>
+<template id="author-grid">
+  <table class="table mt-4">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Topic</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+</template>
+<template id="author-row">
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</template>
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand text-light" href="/">
+      Framework-less Components with Observables
+    </a>
+  </div>
+</nav>
+<html-app></html-app>
+<script type="module" src="index.js"></script>
+</body>
+</html>

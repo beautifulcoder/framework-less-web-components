@@ -1,0 +1,29 @@
+{
+  "name": "framework-less-web-components",
+  "version": "1.0.0",
+  "description": "Framework-less Web Components with Observables",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beautifulcoder/framework-less-web-components.git"
+  },
+  "keywords": [
+    "HTMLElement",
+    "JavaScript",
+    "Observables",
+    "ES7+"
+  ],
+  "author": "Camilo Reyes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beautifulcoder/framework-less-web-components/issues"
+  },
+  "homepage": "https://github.com/beautifulcoder/framework-less-web-components#readme",
+  "dependencies": {
+    "bootstrap": "5.0.0-beta2",
+    "http-server": "0.12.3"
+  }
+}
